@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\objects\counter.o"
+".\objects\startup_sam3n.o"
+".\objects\system_sam3n.o"
+--strict --scatter ".\Objects\Az10.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Az10.map" -o .\Objects\Az10.axf
